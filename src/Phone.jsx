@@ -35,7 +35,6 @@ export default function Phone() {
           <p>Available to Walk</p>
         </div>
         <svg
-        className="three-dots"
           width="1rem"
           height="1rem"
           viewBox="0 0 24 24"
@@ -58,7 +57,6 @@ export default function Phone() {
               transform="translate(24) rotate(90)"
             >
               {" "}
-              <rect id="Rectangle" width={24} height={24} fill="none" />{" "}
               <circle
                 id="Oval"
                 cx={1}
