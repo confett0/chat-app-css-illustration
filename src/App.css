@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: hsl(270, 20%, 96%);
+  background-color: #fff;
   color: hsl(270, 7%, 64%);
   font-family: 'Rubik Variable', sans-serif;
   position: relative;
@@ -21,6 +21,19 @@ body::before {
   position: absolute;
   left: -4rem;
   top: 0;
+}
+
+body::after  {
+    background: hsl(270, 20%, 96%);
+    border-radius: 13rem 13rem 0 0;
+    content: "";
+    display: inline-block;
+    width: 26rem;
+    height: 85vh;
+    position: absolute;
+    right: -6rem;
+    bottom: 0;
+    z-index: -1;
 }
 
 #root {
