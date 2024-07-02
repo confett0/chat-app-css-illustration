@@ -1,13 +1,13 @@
 # Chat App CSS Illustration
 
-This project is a chat app CSS illustration created for a (Frontend Mentor challenge[https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY]). The objective was to build out the feature illustration using HTML and CSS, making it look as close to the provided design as possible. The challenge involved practicing responsive design and using various CSS techniques to position and style the elements.
+This project is a chat app CSS illustration created for a [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). The objective was to build out the feature illustration using HTML and CSS, making it look as close to the provided design as possible. The challenge involved practicing responsive design and using various CSS techniques to position and style the elements.
 
 ## Demo
-(Live Demo)[]
+[Live Demo](https://bright-licorice-2f95fd.netlify.app/)
 
 ## Project Screenshots
-!(Screenshot desktop)[public/screenshot-1.jpg]
-!(Screenshot mobile)[public/screenshot-2.jpg]
+![Screenshot desktop](public/screenshot-1.jpg)
+![Screenshot mobile](public/screenshot-2.jpg)
 
 ## Features
 
