@@ -21,11 +21,11 @@ export default function AppBody() {
         her out for?
       </div>
       <div className="chat left option">
-        <input type="radio" />
+        <div className="radio-button"></div>
         30 minute walk<span className="price">$29</span>
       </div>
       <div className="chat left option">
-        <input type="radio" />
+        <div className="radio-button"></div>
         60 minute walk<span className="price">$49</span>
       </div>
       <div className="input">
