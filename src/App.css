@@ -200,6 +200,7 @@ body {
 
 .text {
   max-width: 25rem;
+  text-align: center;
 }
 
 .text h1 {
