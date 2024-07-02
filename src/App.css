@@ -54,7 +54,7 @@ body::after  {
   border-radius: 1.4rem;
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
   width: 15rem;
-  height: 28rem;
+  height: 30.5rem;
 }
 
 .app-header {
@@ -104,13 +104,13 @@ body::after  {
 
 .app-body {
   display: grid;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
 .chat {
   border-radius: 0.5rem;
   font-size: 0.5rem;
-  margin-bottom: 0.5rem;
   padding: 0.5rem;
   max-width: 60%;
 }
@@ -126,6 +126,50 @@ body::after  {
   border-bottom-right-radius: 0.2rem;
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
   justify-self: end;
+}
+
+.image-group {
+  display: flex;
+  gap: 0.3rem;
+  justify-self: end;
+}
+
+.chat-image {
+  border-radius: 0.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.option {
+  align-items: center;
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: #fff;
+  display: flex;
+  gap: 0.5rem;
+  max-width: 80%;
+  padding: 0.6rem;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.input {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  font-size: 0.7rem;
+  height: 2.5rem;
+  margin: 0.7rem 0;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+#right-arrow {
+  margin-left: auto;
 }
 
 .text {
