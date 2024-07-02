@@ -1,6 +1,6 @@
 export default function AppHeader() {
   return (
-    <div className="phone-header">
+    <div className="app-header">
       <svg
         height="0.7rem"
         width="0.7rem"

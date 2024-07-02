@@ -50,7 +50,6 @@ body::after  {
 
 .phone {
   background-color: hsl(270, 20%, 96%);
-  ;
   border: 8px solid #fff;
   border-radius: 1.4rem;
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
@@ -58,10 +57,10 @@ body::after  {
   height: 28rem;
 }
 
-.phone-header {
+.app-header {
   align-items: center;
   background: linear-gradient(247deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  border-radius: 1.4rem 1.4rem 0.4rem 0.4rem;
+  border-radius: 1rem 1rem 0.4rem 0.4rem;
   color: #fff;
   display: flex;
   gap: 0.6rem;
@@ -70,7 +69,7 @@ body::after  {
   position: relative;
 }
 
-.phone-header::before {
+.app-header::before {
   background-color: #fff;
   border-radius: 0 0 0.5rem 0.5rem;
   content: "";
@@ -82,13 +81,13 @@ body::after  {
   left: 27%;
 }
 
-.phone-header h3 {
+.app-header h3 {
   font-weight: 500;
   font-size: 0.7rem;
   margin-bottom: 0.3rem;
 }
 
-.phone-header p {
+.app-header p {
   color: hsl(276, 100%, 81%);
   font-size: 0.5rem;
 }
@@ -101,6 +100,32 @@ body::after  {
 
 #three-dots {
   margin-left: auto;
+}
+
+.app-body {
+  display: grid;
+  padding: 0.5rem;
+}
+
+.chat {
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  max-width: 60%;
+}
+
+.left {
+  background-color: rgb(232, 222, 241);
+  border-bottom-left-radius: 0.2rem;
+  color: hsl(276, 55%, 52%);
+}
+
+.right {
+  background-color: #fff;
+  border-bottom-right-radius: 0.2rem;
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+  justify-self: end;
 }
 
 .text {
