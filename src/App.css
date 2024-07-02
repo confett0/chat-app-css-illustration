@@ -8,44 +8,46 @@ body {
   background-color: hsl(0, 0%, 98%);
   color: hsl(270, 7%, 64%);
   font-family: 'Rubik Variable', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  max-width: 1440px;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3rem 3rem 0 3rem;
   position: relative;
 }
 
-body::before {
+.phone-wrap, .text-wrap {
+  align-items: center;
+  display: flex;
+  width: 45%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.phone-wrap {
+  justify-content: end;
+}
+
+.phone-wrap::before {
   background: linear-gradient(45deg, hsl(264, 100%, 61%) 0%, hsl(264, 100%, 61%) 40%, hsl(293, 100%, 63%) 100%);
   border-radius: 0 0 13rem 13rem;
   content: "";
   display: inline-block;
   width: 26rem;
-  height: 85vh;
+  height: 40rem;
   position: absolute;
   left: -4rem;
   top: 0;
-}
-
-body::after  {
-    background: hsl(293, 40%, 96%);
-    border-radius: 13rem 13rem 0 0;
-    content: "";
-    display: inline-block;
-    width: 26rem;
-    height: 85vh;
-    position: absolute;
-    right: -6rem;
-    bottom: 0;
-    z-index: -1;
-}
-
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10rem;
-  max-width: 1440px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 3rem;
-  position: relative;
 }
 
 .phone {
@@ -53,8 +55,11 @@ body::after  {
   border: 8px solid #fff;
   border-radius: 1.4rem;
   box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
   width: 15rem;
   height: 30.5rem;
+  z-index: 5;
+  position: relative;
 }
 
 .app-header {
@@ -180,6 +185,19 @@ body::after  {
   margin-left: auto;
 }
 
+.text-wrap::after {
+  background: hsl(293, 40%, 96%);
+  border-radius: 13rem 13rem 0 0;
+  content: "";
+  display: inline-block;
+  width: 26rem;
+  height: 40rem;
+  position: absolute;
+  right: -6rem;
+  bottom: 0;
+  z-index: -1;
+}
+
 .text {
   max-width: 25rem;
 }
@@ -193,4 +211,19 @@ body::after  {
 .text p {
   letter-spacing: 0.1px;
   line-height: 1.8;
+}
+
+@media screen and (max-width: 900px) {
+  .phone-wrap, .text-wrap {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .phone-wrap {
+    height: 33rem;
+  }
+
+  .text-wrap {
+    height: 20rem;
+  }
 }

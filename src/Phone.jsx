@@ -3,9 +3,11 @@ import AppBody from "./AppBody";
 
 export default function Phone() {
   return (
-    <div className="phone">
-      <AppHeader />
-      <AppBody />
+    <div className="phone-wrap">
+      <div className="phone">
+        <AppHeader />
+        <AppBody />
+      </div>
     </div>
   );
 }
